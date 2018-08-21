@@ -33,7 +33,7 @@ public class TestMovie2 {
 
     actor.setMovies(movies);
     actorRepository.save(actor);
-
-    assertEquals(actorRepository.findById(1L).get().getId(), actor.getId());
+    //Test values should always be unique
+    assertEquals(actorRepository.findById(2L).get().getId(), actor.getId());
   }
 }
